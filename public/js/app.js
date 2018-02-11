@@ -12219,7 +12219,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\index.vue"
+Component.options.__file = "resources\\assets\\js\\components\\index1.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -12228,9 +12228,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7e6399ea", Component.options)
+    hotAPI.createRecord("data-v-5901c036", Component.options)
   } else {
-    hotAPI.reload("data-v-7e6399ea", Component.options)
+    hotAPI.reload("data-v-5901c036", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -12287,7 +12287,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(83);
+var	fixUrls = __webpack_require__(98);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -12604,7 +12604,7 @@ function updateLink (link, options, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(17);
-module.exports = __webpack_require__(86);
+module.exports = __webpack_require__(101);
 
 
 /***/ }),
@@ -12618,12 +12618,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_routerView_vue__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_routerView_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_routerView_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hostSetting__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mint_ui__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hostSetting__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mint_ui__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mint_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_mint_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_mint_ui_lib_style_css__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_mint_ui_lib_style_css__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_mint_ui_lib_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_mint_ui_lib_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_iconfont_css__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_iconfont_css__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_iconfont_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__sass_iconfont_css__);
 
 /**
@@ -43809,8 +43809,8 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cv_list_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cv_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_cv_list_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_index_vue__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_index1_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_index1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_index1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_first_vue__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_first_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_first_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_communication_main_vue__ = __webpack_require__(61);
@@ -43819,9 +43819,18 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_mine_main_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_mine_main_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_grow_main_vue__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_grow_main_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_grow_main_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_grow_share_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_grow_share_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_grow_share_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_grow_active_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_grow_active_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_grow_active_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_grow_work_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_grow_work_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_grow_work_vue__);
 
 
 // import route from  '../components/routerView.vue'
+
+
+
 
 
 
@@ -43835,9 +43844,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
     routes: [{
         path: '/',
         name: 'Main',
-        component: __WEBPACK_IMPORTED_MODULE_3__components_index_vue___default.a,
+        component: __WEBPACK_IMPORTED_MODULE_3__components_index1_vue___default.a,
         redirect: '/index',
-        children: [{ path: 'index', component: __WEBPACK_IMPORTED_MODULE_4__components_first_vue___default.a, name: '首页' }, { path: 'list', component: __WEBPACK_IMPORTED_MODULE_2__components_cv_list_vue___default.a, name: '简历列表' }, { path: 'communication', component: __WEBPACK_IMPORTED_MODULE_5__components_communication_main_vue___default.a, name: '交流' }, { path: 'grow', component: __WEBPACK_IMPORTED_MODULE_7__components_grow_main_vue___default.a, name: '成长' }, { path: 'mine', component: __WEBPACK_IMPORTED_MODULE_6__components_mine_main_vue___default.a, name: '我的' }]
+        children: [{ path: 'index', component: __WEBPACK_IMPORTED_MODULE_4__components_first_vue___default.a, name: '首页' }, { path: 'list', component: __WEBPACK_IMPORTED_MODULE_2__components_cv_list_vue___default.a, name: '简历列表' }, { path: 'communication', component: __WEBPACK_IMPORTED_MODULE_5__components_communication_main_vue___default.a, name: '交流' }, { path: 'grow', component: __WEBPACK_IMPORTED_MODULE_7__components_grow_main_vue___default.a, name: '成长', redirect: '/grow/share', children: [{ path: 'share', component: __WEBPACK_IMPORTED_MODULE_8__components_grow_share_vue___default.a, name: '取经' }, { path: 'active', component: __WEBPACK_IMPORTED_MODULE_9__components_grow_active_vue___default.a, name: '升级' }, { path: 'work', component: __WEBPACK_IMPORTED_MODULE_10__components_grow_work_vue___default.a, name: '打怪' }] }, { path: 'mine', component: __WEBPACK_IMPORTED_MODULE_6__components_mine_main_vue___default.a, name: '我的' }]
     }]
 }));
 
@@ -46653,19 +46662,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             tabbars: [{
                 text: '首页',
                 url: '/index',
-                class: 'iconfont icon-index'
+                class: 'bottom-icon bottom-icon-index'
             }, {
                 text: '成长',
                 url: '/grow',
-                class: 'iconfont icon-grow'
+                class: 'bottom-icon bottom-icon-grow'
             }, {
                 text: '交流',
                 url: '/communication',
-                class: 'iconfont icon-chat'
+                class: 'bottom-icon bottom-icon-chat'
             }, {
                 text: '我的',
                 url: '/mine',
-                class: 'iconfont icon-mine'
+                class: 'bottom-icon bottom-icon-mine'
             }]
         };
     },
@@ -46705,10 +46714,7 @@ var render = function() {
                 }
               },
               [
-                _c("i", {
-                  class: tab.class,
-                  staticStyle: { "font-size": "3rem" }
-                }),
+                _c("div", { class: tab.class }),
                 _vm._v(" "),
                 _c("div", [_vm._v(_vm._s(tab.text))])
               ]
@@ -46726,7 +46732,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7e6399ea", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5901c036", module.exports)
   }
 }
 
@@ -46832,96 +46838,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             icons1: [{
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
+                img: 'http://www.lsecret.cn/img/icon/home.png',
+                text: '会员之家',
                 url: '/index'
             }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
+                img: 'http://www.lsecret.cn/img/icon/gk.png',
+                text: '高考指南',
                 url: '/index'
             }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
+                img: 'http://www.lsecret.cn/img/icon/qc.png',
+                text: '活力青春',
                 url: '/index'
             }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
-                url: '/index'
-            }],
-            icons2: [{
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
-                url: '/index'
-            }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
-                url: '/index'
-            }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
-                url: '/index'
-            }, {
-                img: window.host + '/img/logo.png',
-                text: '新闻中心',
+                img: 'http://www.lsecret.cn/img/icon/rc.png',
+                text: '人才平台',
                 url: '/index'
             }],
             news: [{
                 id: 1,
                 title: '2018年寒假活动启动仪式',
                 time: '1月22日 13:59:00',
-                img: window.host + '/img/logo.png',
-                url: '/article/1',
-                info: '盘州市大学生联谊会活动在XX举行启动仪式'
+                img: 'http://www.lsecret.cn/img/user/bg.jpg',
+                url: '/article/1'
             }, {
                 id: 1,
                 title: '2018年寒假活动启动仪式',
                 time: '1月22日 13:59:00',
-                img: window.host + '/img/logo.png',
-                url: '/article/1',
-                info: '盘州市大学生联谊会活动在XX举行启动仪式'
+                img: 'http://www.lsecret.cn/img/user/bg.jpg',
+                url: '/article/1'
             }],
-            employs: [{
-                id: 1,
-                title: '2018年寒假部门招新',
-                time: '1月22日 13:59:00',
-                img: window.host + '/img/logo.png',
-                url: '/article/1',
-                info: '2018年寒假部门招新'
-            }, {
-                id: 1,
-                title: '2018年寒假活动招新',
-                time: '1月22日 13:59:00',
-                img: window.host + '/img/logo.png',
-                url: '/article/1',
-                info: '盘州市大学生联谊会活动招新'
-            }]
+            swipes: [{ id: 0, url: '', img: 'http://www.lsecret.cn/img/SJK.png' }, { id: 1, url: '', img: 'http://www.lsecret.cn/img/user/bg.jpg' }]
         };
     },
     mounted: function mounted() {
@@ -46946,25 +46897,16 @@ var render = function() {
   return _c("div", { staticClass: "full" }, [
     _c(
       "div",
-      { staticClass: "top_pic" },
+      { staticClass: "aspectration", attrs: { "data-ratio": "2:1" } },
       [
         _c(
           "mt-swipe",
           { attrs: { auto: 0 } },
-          [
-            _c("mt-swipe-item", [
-              _c("img", { attrs: { src: "http://localhost:8088/img/1.jpg" } })
-            ]),
-            _vm._v(" "),
-            _c("mt-swipe-item", [
-              _c("img", { attrs: { src: "http://localhost:8088/img/2.jpg" } })
-            ]),
-            _vm._v(" "),
-            _c("mt-swipe-item", [
-              _c("img", { attrs: { src: "http://localhost:8088/img/3.jpg" } })
+          _vm._l(_vm.swipes, function(swipe) {
+            return _c("mt-swipe-item", { key: swipe.id }, [
+              _c("img", { attrs: { src: swipe.img } })
             ])
-          ],
-          1
+          })
         )
       ],
       1
@@ -46992,56 +46934,27 @@ var render = function() {
             ]
           )
         })
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row" },
-        _vm._l(_vm.icons2, function(icon) {
-          return _c("div", { staticClass: "col-xs-3 icon_bar" }, [
-            _c("img", { attrs: { src: icon.img } }),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(icon.text))])
-          ])
-        })
       )
     ]),
+    _vm._v(" "),
+    _vm._m(0),
     _vm._v(" "),
     _c(
       "div",
       { staticClass: "container icon-box" },
       [
-        _c(
-          "div",
-          { staticClass: "title-bar" },
-          [
-            _c("font", [_c("span", [_vm._v("|")]), _vm._v("最新动态")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "more" }, [_vm._v("查看更多")])
-          ],
-          1
-        ),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "hr" }),
         _vm._v(" "),
         _vm._l(_vm.news, function(item) {
-          return _c("div", { staticClass: "raw info-box" }, [
-            _c("img", { staticClass: "col-xs-3", attrs: { src: item.img } }),
+          return _c("div", { staticClass: "info-box" }, [
+            _c("img", { attrs: { src: item.img } }),
             _vm._v(" "),
-            _c("div", { staticClass: "col-xs-9" }, [
-              _c("h4", { staticStyle: { margin: "5px 0" } }, [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(item.title) +
-                    "\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(item.info) +
-                    "\n                "
-                )
-              ])
+            _c("div", { staticClass: "content" }, [
+              _vm._v(
+                "\n                    " + _vm._s(item.title) + "\n            "
+              )
             ]),
             _vm._v(" "),
             _c("span", { staticClass: "times" }, [_vm._v(_vm._s(item.time))]),
@@ -47053,54 +46966,46 @@ var render = function() {
       2
     ),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container icon-box" },
-      [
-        _c(
-          "div",
-          { staticClass: "title-bar" },
-          [
-            _c("font", [_c("span", [_vm._v("|")]), _vm._v("团队招新")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "more" }, [_vm._v("查看更多")])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._l(_vm.employs, function(item) {
-          return _c("div", { staticClass: "raw info-box" }, [
-            _c("img", { staticClass: "col-xs-3", attrs: { src: item.img } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-xs-9" }, [
-              _c("h4", { staticStyle: { margin: "5px 0" } }, [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(item.title) +
-                    "\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(item.info) +
-                    "\n                "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "times" }, [_vm._v(_vm._s(item.time))]),
-            _vm._v(" "),
-            _c("span", { staticStyle: { color: "#fff" } }, [_vm._v("1")])
-          ])
-        })
-      ],
-      2
-    )
+    _vm._m(2),
+    _vm._v(" "),
+    _c("div", { staticStyle: { clear: "both" } })
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "background-bar" }, [
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", [_vm._v("终于等到你")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "title-bar" }, [
+      _c("div", [_c("div", { staticClass: "color_bar" }), _vm._v("最新动态")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "more" }, [
+        _vm._v("查看更多"),
+        _c("img", { attrs: { src: "http://www.lsecret.cn/img/icon/next.png" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "background-bar" }, [
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", [_vm._v("我是底线")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -47196,7 +47101,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -47214,11 +47119,53 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            msg: '交流'
+            msg: '交流',
+            txl: [{ name: '我的校友', url: '', img: 'http://www.lsecret.cn/img/chat/xy.png' }, { name: '我的部门', url: '', img: 'http://www.lsecret.cn/img/chat/bm.png' }, { name: '分会', url: '', img: 'http://www.lsecret.cn/img/chat/fh.png' }],
+            hd: [{ name: '老乡会', url: '', img: 'http://www.lsecret.cn/img/chat/lxh.png' }, { name: '一起回家', url: '', img: 'http://www.lsecret.cn/img/chat/home.png' }, { name: '发起活动', url: '', img: 'http://www.lsecret.cn/img/chat/hd.png' }],
+            sq: [{ name: '', url: '', img: 'http://www.lsecret.cn/img/chat/wsq.png' }]
         };
     },
     mounted: function mounted() {
@@ -47242,9 +47189,91 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")])
+  return _c("div", [
+    _c("div", { staticClass: "chat-tar" }, [_vm._v("交流")]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "info-tab" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "container icon-box" }, [
+      _c("div", { staticClass: "title-bar" }, [
+        _vm._v("\n            通讯录\n        ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "chat-menu" },
+        [
+          _vm._l(_vm.txl, function(item) {
+            return _c("div", { staticClass: "chat-icon" }, [
+              _c("img", { attrs: { src: item.img } }),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(item.name))])
+            ])
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "cb" })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "title-bar" }, [
+        _vm._v("\n            发起活动\n        ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "chat-menu" },
+        [
+          _vm._l(_vm.hd, function(item) {
+            return _c("div", { staticClass: "chat-icon" }, [
+              _c("img", { attrs: { src: item.img } }),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(item.name))])
+            ])
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "cb" })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "title-bar" }, [
+        _vm._v("\n            微社区\n        ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "chat-menu" },
+        [
+          _vm._l(_vm.sq, function(item) {
+            return _c("div", { staticClass: "chat-icon" }, [
+              _c("img", { attrs: { src: item.img } }),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(item.name))])
+            ])
+          }),
+          _vm._v(" "),
+          _c("div", { staticStyle: { clear: "both" } })
+        ],
+        2
+      )
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "aspectration", attrs: { "data-ratio": "2:1" } },
+      [_c("img", { attrs: { src: "http://www.lsecret.cn/img/bg1.png" } })]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -47340,7 +47369,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -47364,6 +47393,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -47371,14 +47437,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             msg: '我的',
             mine: {
                 id: 1,
-                name: '卢宇',
+                name: '蒋小花',
                 email: '1239430843@qq.com',
                 phone: '18188286594',
-                bgp: 'http://localhost:8088/un.jpg',
-                head: 'http://localhost:8088/un.jpg',
+                qm: '我想想要一个很酷的签名',
+                bgp: 'http://www.lsecret.cn/img/user/bg.jpg',
+                head: 'http://www.lsecret.cn/img/user/head.jpg',
                 sex: '0',
                 auth: '0'
-            }
+            },
+            item1: [{ text: '个人信息', img: 'http://www.lsecret.cn/img/icon/mine/info.png', url: '' }, { text: '我的申请', img: 'http://www.lsecret.cn/img/icon/mine/apply.png', url: '' }, { text: '我的发布', img: 'http://www.lsecret.cn/img/icon/mine/fb.png', url: '' }, { text: '建议反馈', img: 'http://www.lsecret.cn/img/icon/mine/jy.png', url: '' }],
+            item2: [{ text: '我的设置', img: 'http://www.lsecret.cn/img/icon/mine/set.png', url: '' }, { text: '我的校友', img: 'http://www.lsecret.cn/img/icon/mine/xy.png', url: '' }, { text: '安全中心', img: 'http://www.lsecret.cn/img/icon/mine/safe.png', url: '' }, { text: '我想静静', img: 'http://www.lsecret.cn/img/icon/mine/unable.png', url: '' }]
         };
     },
     mounted: function mounted() {
@@ -47403,22 +47472,110 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "mine-top" }, [
-      _c("div", { staticClass: "background-img" }, [
-        _c("img", { attrs: { src: _vm.mine.bgp } })
-      ]),
+    _c(
+      "div",
+      { staticClass: "aspectration", attrs: { "data-ratio": "1:0.67" } },
+      [
+        _c("img", {
+          staticStyle: { "z-index": "0" },
+          attrs: { src: _vm.mine.bgp }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mine-top", staticStyle: { "z-index": "1" } },
+          [
+            _c("div", { staticClass: "title-bar" }, [
+              _vm._v("\n                我的\n            ")
+            ]),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "head-pic",
+              attrs: { src: _vm.mine.head }
+            }),
+            _vm._v(" "),
+            _c("div", [
+              _c("div", { staticClass: "name" }, [
+                _vm._v(_vm._s(_vm.mine.name))
+              ]),
+              _vm._v(" "),
+              _c("div", { staticStyle: { clear: "both" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "qm" }, [_vm._v(_vm._s(_vm.mine.qm))])
+            ]),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "container menu-box" }, [
+      _c("div", { staticClass: "line-across" }),
       _vm._v(" "),
-      _c("div", { staticClass: "mine-head" }, [
-        _c("img", { attrs: { src: _vm.mine.head } })
-      ]),
+      _c("div", { staticClass: "line-stand left-25" }),
       _vm._v(" "),
-      _c("div", { staticClass: "mine-text" }, [
-        _c("div", [_vm._v(_vm._s(_vm.mine.name))])
-      ])
-    ])
+      _c("div", { staticClass: "line-stand left-50" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "line-stand left-75" }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.item1, function(item) {
+          return _c("div", { staticClass: "col-xs-3" }, [
+            _c("img", { attrs: { src: item.img } }),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(item.text))])
+          ])
+        })
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.item2, function(item) {
+          return _c("div", { staticClass: "col-xs-3" }, [
+            _c("img", { attrs: { src: item.img } }),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(item.text))])
+          ])
+        })
+      )
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container icon-box button-bar" },
+      [
+        _c(
+          "mt-button",
+          { staticClass: "mine-logout", attrs: { size: "small" } },
+          [_vm._v("不要点我")]
+        )
+      ],
+      1
+    )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mine-top-bottom" }, [
+      _c("div", [
+        _c("i", { staticClass: "iconfont icon-sc" }),
+        _vm._v("收藏\n                ")
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("i", { staticClass: "iconfont icon-tz" }),
+        _vm._v("通知\n                ")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -47514,7 +47671,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -47532,11 +47689,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            msg: '成长'
+            msg: '成长',
+            tabs: [{ text: '取经', url: '/grow/share' }, { text: '升级', url: '/grow/active' }, { text: '打怪', url: '/grow/work' }]
         };
     },
     mounted: function mounted() {
@@ -47560,7 +47723,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")])
+  return _c(
+    "div",
+    [
+      _c(
+        "div",
+        { staticClass: "grow-tar" },
+        _vm._l(_vm.tabs, function(tab) {
+          return _c(
+            "router-link",
+            {
+              key: tab.text,
+              attrs: { tag: "div", to: tab.url, "active-class": "top-active" }
+            },
+            [_vm._v("\n            " + _vm._s(tab.text) + "\n        ")]
+          )
+        })
+      ),
+      _vm._v(" "),
+      _c("router-view", { staticClass: "grow-body" })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -47574,15 +47758,580 @@ if (false) {
 
 /***/ }),
 /* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(77)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(79)
+/* template */
+var __vue_template__ = __webpack_require__(80)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\grow\\share.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1250c326", Component.options)
+  } else {
+    hotAPI.reload("data-v-1250c326", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(78);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("3bf8a756", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1250c326\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./share.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1250c326\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./share.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            msg: '取经',
+            shares: [{ id: 0, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }, { id: 1, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }, { id: 2, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }, { id: 3, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }, { id: 4, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }, { id: 5, title: '学长教你做简历：应届毕业生该如何规划职业生涯', type: '面试', date: '2月9日' }],
+            topStatus: ''
+        };
+    },
+    mounted: function mounted() {},
+
+    methods: {
+        handleTopChange: function handleTopChange(status) {
+            this.topStatus = status;
+        },
+        loadTop: function loadTop() {}
+    }
+});
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "mt-loadmore",
+        {
+          attrs: { "top-method": _vm.loadTop },
+          on: { "top-status-change": _vm.handleTopChange }
+        },
+        _vm._l(_vm.shares, function(share) {
+          return _c(
+            "div",
+            { staticClass: "aspectration", attrs: { "data-ratio": "20:7" } },
+            [
+              _c("div", { staticClass: "share-box" }, [
+                _c("div", { staticClass: "share-title" }, [
+                  _vm._v(_vm._s(share.title))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "share-major" }, [
+                  _vm._v("分享主题：" + _vm._s(share.type))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "times" }, [
+                  _vm._v(_vm._s(share.date))
+                ])
+              ])
+            ]
+          )
+        })
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "aspectration", attrs: { "data-ratio": "3:1" } },
+      [_c("img", { attrs: { src: "http://www.lsecret.cn/img/bg1.png" } })]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1250c326", module.exports)
+  }
+}
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(82)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(84)
+/* template */
+var __vue_template__ = __webpack_require__(85)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\grow\\active.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-69b9ec30", Component.options)
+  } else {
+    hotAPI.reload("data-v-69b9ec30", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(83);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("52f8f604", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-69b9ec30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./active.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-69b9ec30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./active.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            msg: '取经',
+            actives: [{ id: 0, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 1, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 2, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 3, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 4, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 5, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }, { id: 6, title: '2018年盘州市大学生联谊会寒假“春联下乡”活动招新', type: '活动', date: '2月9日', img: 'http://www.lsecret.cn/img/bg2.png' }],
+            topStatus: ''
+        };
+    },
+    mounted: function mounted() {},
+
+    methods: {
+        handleTopChange: function handleTopChange(status) {
+            this.topStatus = status;
+        },
+        loadTop: function loadTop() {}
+    }
+});
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "mt-loadmore",
+        {
+          attrs: { "top-method": _vm.loadTop },
+          on: { "top-status-change": _vm.handleTopChange }
+        },
+        _vm._l(_vm.actives, function(active) {
+          return _c(
+            "div",
+            { staticClass: "aspectration", attrs: { "data-ratio": "20:7" } },
+            [
+              _c("div", { staticClass: "active-box" }, [
+                _c("div", { staticClass: "active-main" }, [
+                  _c("div", { staticClass: "active-title" }, [
+                    _vm._v(_vm._s(active.title))
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "active-type" }, [
+                    _vm._v("招新：" + _vm._s(active.type))
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "times" }, [
+                    _vm._v(_vm._s(active.date))
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "active-img" }, [
+                  _c("img", { attrs: { src: active.img } })
+                ])
+              ])
+            ]
+          )
+        })
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "aspectration", attrs: { "data-ratio": "3:1" } },
+      [_c("img", { attrs: { src: "http://www.lsecret.cn/img/bg2.png" } })]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-69b9ec30", module.exports)
+  }
+}
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(87)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(89)
+/* template */
+var __vue_template__ = __webpack_require__(90)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\grow\\work.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3e909ef3", Component.options)
+  } else {
+    hotAPI.reload("data-v-3e909ef3", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(88);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("a5c61f00", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e909ef3\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./work.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e909ef3\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./work.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            msg: '取经'
+        };
+    },
+    mounted: function mounted() {},
+
+    methods: {
+        handleTopChange: function handleTopChange(status) {
+            this.topStatus = status;
+        },
+        loadTop: function loadTop() {}
+    }
+});
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("img", {
+        staticStyle: { width: "100%", height: "100%" },
+        attrs: { src: "http://www.lsecret.cn/img/kdd.png" }
+      })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3e909ef3", module.exports)
+  }
+}
+
+/***/ }),
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
     host: 'http://localhost:8088'
+    // host:'http://www.lsecret.cn'
 });
 
 /***/ }),
-/* 77 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports =
@@ -57479,19 +58228,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /* 199 */
 /***/ function(module, exports) {
 
-module.exports = __webpack_require__(78);
+module.exports = __webpack_require__(93);
 
 /***/ },
 /* 200 */
 /***/ function(module, exports) {
 
-module.exports = __webpack_require__(79);
+module.exports = __webpack_require__(94);
 
 /***/ },
 /* 201 */
 /***/ function(module, exports) {
 
-module.exports = __webpack_require__(80);
+module.exports = __webpack_require__(95);
 
 /***/ },
 /* 202 */
@@ -57504,7 +58253,7 @@ module.exports = __webpack_require__(14);
 /******/ ]);
 
 /***/ }),
-/* 78 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57536,7 +58285,7 @@ module.exports = function (arr, predicate, ctx) {
 
 
 /***/ }),
-/* 79 */
+/* 94 */
 /***/ (function(module, exports) {
 
 /*
@@ -57583,7 +58332,7 @@ module.exports = function (arr, predicate, ctx) {
 
 
 /***/ }),
-/* 80 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -57595,13 +58344,13 @@ module.exports = function (arr, predicate, ctx) {
 
 
 /***/ }),
-/* 81 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(82);
+var content = __webpack_require__(97);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -57626,7 +58375,7 @@ if(false) {
 }
 
 /***/ }),
-/* 82 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -57640,7 +58389,7 @@ exports.push([module.i, "/* Cell Component */\n/* Header Component */\n/* Button
 
 
 /***/ }),
-/* 83 */
+/* 98 */
 /***/ (function(module, exports) {
 
 
@@ -57735,13 +58484,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 84 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(85);
+var content = __webpack_require__(100);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -57766,7 +58515,7 @@ if(false) {
 }
 
 /***/ }),
-/* 85 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -57774,13 +58523,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\r\n    font-family: 'iconfont';  /* project id 559970 */\r\n    src: url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.eot');\r\n    src: url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.eot?#iefix') format('embedded-opentype'),\r\n    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.woff') format('woff'),\r\n    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.ttf') format('truetype'),\r\n    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.svg#iconfont') format('svg');\r\n}\r\n\r\n.iconfont {\r\n    font-family:\"iconfont\" !important;\r\n    font-size:16px;\r\n    font-style:normal;\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.icon-index:before{ content: '\\E63E'}\r\n.icon-grow:before{ content:'\\E600'}\r\n.icon-mine:before{ content:'\\E614'}\r\n.icon-chat:before{ content:'\\E6B6'}", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'iconfont';  /* project id 559970 */\n    src: url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.eot');\n    src: url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.eot?#iefix') format('embedded-opentype'),\n    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.woff') format('woff'),\n    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.ttf') format('truetype'),\n    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.svg#iconfont') format('svg');\n}\n\n.iconfont {\n    font-family:\"iconfont\" !important;\n    font-size:16px;\n    font-style:normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.icon-index:before{ content: '\\E63E'}\n.icon-grow:before{ content:'\\E600'}\n.icon-mine:before{ content:'\\E614'}\n.icon-chat:before{ content:'\\E6B6'}\n\n.icon-sc:before{ content:'\\E60B'}\n.icon-tz:before{ content:'\\E623'}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 86 */
+/* 101 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -24,7 +24,7 @@ Vue.use(Mint);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/index.vue'));
+Vue.component('example-component', require('./components/index1.vue'));
 
 window.host = hostSetting.host
 const app = new Vue({

@@ -4,7 +4,7 @@
     <nav class="my-tabbar container">
         <div class="row">
             <router-link tag="div" class="col-xs-3 bottom-bar" v-for="tab in tabbars" :key="tab.text" :to="tab.url" active-class="bottom-active">
-                <i :class="tab.class" style="font-size: 3rem"></i>
+                <div :class="tab.class"></div>
                 <div>{{tab.text}}</div>
             </router-link>
         </div>
@@ -22,22 +22,22 @@
                     {
                         text:'首页',
                         url:'/index',
-                        class:'iconfont icon-index',
+                        class:'bottom-icon bottom-icon-index',
                     },
                     {
                         text:'成长',
                         url:'/grow',
-                        class:'iconfont icon-grow',
+                        class:'bottom-icon bottom-icon-grow',
                     },
                     {
                         text:'交流',
                         url:'/communication',
-                        class:'iconfont icon-chat',
+                        class:'bottom-icon bottom-icon-chat',
                     },
                     {
                         text:'我的',
                         url:'/mine',
-                        class:'iconfont icon-mine',
+                        class:'bottom-icon bottom-icon-mine',
                     }
                 ]
             }

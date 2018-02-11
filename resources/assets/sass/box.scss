@@ -1,0 +1,32 @@
+.aspectration {
+  position: relative; /*因为容器所有子元素需要绝对定位*/
+  height: 0; /*容器高度是由padding来控制，盒模型原理告诉你一切*/
+  width: 100%;
+}
+.aspectration[data-ratio="16:9"] {
+  padding-top: 56.25%;
+}
+.aspectration[data-ratio="4:3"] {
+  padding-top: 75%;
+}
+.aspectration[data-ratio="2:1"] {
+  padding-top:50%;
+}
+.aspectration[data-ratio="1:0.67"] {
+  padding-top:67%;
+}
+.aspectration[data-ratio="3:1"] {
+  padding-top:33%;
+}
+.aspectration[data-ratio="20:7"] {
+  padding-top:35%;
+}
+.aspectration > * {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}

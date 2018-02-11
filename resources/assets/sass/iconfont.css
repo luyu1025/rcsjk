@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'iconfont';  /* project id 559970 */
-    src: url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.eot');
-    src: url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.woff') format('woff'),
-    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_559970_n0681yk1j935wmi.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.eot');
+    src: url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.woff') format('woff'),
+    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_559970_bzvu7lgmbre2vs4i.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -19,3 +19,6 @@
 .icon-grow:before{ content:'\e600'}
 .icon-mine:before{ content:'\e614'}
 .icon-chat:before{ content:'\e6b6'}
+
+.icon-sc:before{ content:'\e60b'}
+.icon-tz:before{ content:'\e623'}

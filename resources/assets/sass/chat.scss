@@ -1,0 +1,41 @@
+.chat-tar{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(55, 55, 55, 0.3);
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  z-index:101;
+}
+.info-tab{
+  height: 30px;
+  width: 100%;
+  background-color: #fefefe;
+}
+.chat-icon{
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin: 5px auto 5px;
+}
+.chat-icon > img{
+  width: 60%;
+  margin-bottom: 5px;
+}
+.chat-icon > p{
+  font-size: 15px;
+  color: #717070;
+  margin-bottom: 5px;
+}
+
+.chat-menu > .cb{
+  clear: both;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 5px;
+}

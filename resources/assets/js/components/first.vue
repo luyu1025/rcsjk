@@ -1,13 +1,11 @@
 <template>
     <div class="full">
         <!--    顶部图片滚动     -->
-        <div class="top_pic">
+        <div class="aspectration" data-ratio="2:1">
             <mt-swipe :auto="0">
-                <mt-swipe-item>
-                    <img src="http://localhost:8088/img/1.jpg">
+                <mt-swipe-item v-for="swipe in swipes" :key="swipe.id">
+                    <img :src="swipe.img">
                 </mt-swipe-item>
-                <mt-swipe-item><img src="http://localhost:8088/img/2.jpg"></mt-swipe-item>
-                <mt-swipe-item><img src="http://localhost:8088/img/3.jpg"></mt-swipe-item>
             </mt-swipe>
         </div>
         <!-- 快捷入口栏 -->
@@ -18,54 +16,34 @@
                     <p>{{icon.text}}</p>
                 </div>
             </div>
-            <div class="row">
-                <div v-for="icon in icons2" class="col-xs-3 icon_bar">
-                    <img :src=icon.img>
-                    <p>{{icon.text}}</p>
-                </div>
-            </div>
+        </div>
+        <!--分割栏-->
+        <div class="background-bar">
+            <hr>
+            <div>终于等到你</div>
         </div>
         <!--最新动态-->
         <div class="container icon-box">
            <div class="title-bar">
-               <font><span>|</span>最新动态</font>
-               <span class="more">查看更多</span>
+               <div><div class="color_bar"></div>最新动态</div>
+               <span class="more">查看更多<img src="http://www.lsecret.cn/img/icon/next.png"></span>
            </div>
-            <div class="raw info-box" v-for="item in news">
-                <img class="col-xs-3" :src="item.img">
-                <div class="col-xs-9">
-                    <h4 style="margin:5px 0;">
+            <div class="hr"></div>
+            <div class="info-box" v-for="item in news">
+                <img :src="item.img">
+                <div class="content">
                         {{item.title}}
-                    </h4>
-                    <div>
-                        {{item.info}}
-                    </div>
                 </div>
                 <span class="times">{{item.time}}</span>
                 <span style="color:#fff">1</span>
             </div>
         </div>
-
-        <!--团队招新-->
-        <div class="container icon-box">
-            <div class="title-bar">
-                <font><span>|</span>团队招新</font>
-                <span class="more">查看更多</span>
-            </div>
-            <div class="raw info-box" v-for="item in employs">
-                <img class="col-xs-3" :src="item.img">
-                <div class="col-xs-9">
-                    <h4 style="margin:5px 0;">
-                        {{item.title}}
-                    </h4>
-                    <div>
-                        {{item.info}}
-                    </div>
-                </div>
-                <span class="times">{{item.time}}</span>
-                <span style="color:#fff">1</span>
-            </div>
+        <!--分割栏-->
+        <div class="background-bar">
+            <hr>
+            <div>我是底线</div>
         </div>
+        <div style="clear: both"></div>
     </div>
 </template>
 
@@ -75,84 +53,46 @@
             return {
                 icons1:[
                     {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
+                        img:'http://www.lsecret.cn/img/icon/home.png',
+                        text:'会员之家',
                         url:'/index'
                     },
                     {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
+                        img:'http://www.lsecret.cn/img/icon/gk.png',
+                        text:'高考指南',
                         url:'/index'
                     },
                     {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
+                        img:'http://www.lsecret.cn/img/icon/qc.png',
+                        text:'活力青春',
                         url:'/index'
                     },
                     {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
+                        img:'http://www.lsecret.cn/img/icon/rc.png',
+                        text:'人才平台',
                         url:'/index'
                     },
-                ],
-                icons2:[
-                    {
-                    img:window.host+'/img/logo.png',
-                    text:'新闻中心',
-                    url:'/index'
-                    },
-                    {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
-                        url:'/index'
-                    },
-                    {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
-                        url:'/index'
-                    },
-                    {
-                        img:window.host+'/img/logo.png',
-                        text:'新闻中心',
-                        url:'/index'
-                    }
                 ],
                 news:[
                     {
                         id:1,
                         title:'2018年寒假活动启动仪式',
                         time:'1月22日 13:59:00',
-                        img:window.host+'/img/logo.png',
+                        img:'http://www.lsecret.cn/img/user/bg.jpg',
                         url:'/article/1',
-                        info:'盘州市大学生联谊会活动在XX举行启动仪式'
                     },
                     {
                         id:1,
                         title:'2018年寒假活动启动仪式',
                         time:'1月22日 13:59:00',
-                        img:window.host+'/img/logo.png',
+                        img:'http://www.lsecret.cn/img/user/bg.jpg',
                         url:'/article/1',
-                        info:'盘州市大学生联谊会活动在XX举行启动仪式'
                     }
                 ],
-                employs:[
-                    {
-                        id:1,
-                        title:'2018年寒假部门招新',
-                        time:'1月22日 13:59:00',
-                        img:window.host+'/img/logo.png',
-                        url:'/article/1',
-                        info:'2018年寒假部门招新'
-                    },
-                    {
-                        id:1,
-                        title:'2018年寒假活动招新',
-                        time:'1月22日 13:59:00',
-                        img:window.host+'/img/logo.png',
-                        url:'/article/1',
-                        info:'盘州市大学生联谊会活动招新'
-                    }
-                ]
+                swipes:[
+                    {id:0,url:'',img:'http://www.lsecret.cn/img/SJK.png'},
+                    {id:1,url:'',img:'http://www.lsecret.cn/img/user/bg.jpg'},
+                ],
             }
         },
         mounted() {

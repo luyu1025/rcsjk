@@ -26,6 +26,24 @@ Route::group(['prefix' => 'cv'],function (){
     Route::get('/','PostController@vue');
 });
 
+Route::group(['prefix' => 'api'],function (){
+    Route::group(['prefix' => 'user'],function (){
+        Route::group(['prefix' => 'info'], function (){
+            Route::get('all', 'ApiController@getUserInfo');
+            Route::get('educations','ApiController@educations');
+        });
+        Route::group(['prefix' => 'edit'], function (){
+
+        });
+        Route::group(['prefix' => 'del'], function (){
+
+        });
+        Route::group(['prefix' => 'add'], function (){
+
+        });
+    });
+});
+
 //Route::post('/yzm/send','PostController@sendMessage');
 Route::post('/yzm/send','PostController@msgReg');
 

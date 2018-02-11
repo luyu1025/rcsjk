@@ -1,0 +1,107 @@
+.mine-top{
+  text-align: center;
+  color: #ffffff;
+}
+.mine-top .head-pic{
+  height: 33.33%;
+  margin: 13% auto 0;
+  border-radius: 50%;
+}
+.mine-top .title-bar{
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(55, 55, 55, 0.3);
+  color: #ffffff;
+  font-size: 18px;
+  //font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.mine-top-bottom{
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.3);
+}
+.mine-top-bottom>div{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  color:#ffffff;
+  line-height: 45px;
+  font-size: 16px;
+}
+.mine-top-bottom i{
+  margin-right: 1rem;
+  font-size: 25px;
+  vertical-align: middle;
+}
+.mine-top .name{
+  padding: 2px 20px;
+  border-radius: 50px;
+  background-color: rgba(55, 55, 55, 0.5);
+  font-size: 16px;
+  margin: 8px 0 3px;
+  display: inline-block;
+}
+.mine-top .qm{
+  padding: 1px 20px;
+  border-radius: 50px;
+  background-color: rgba(55, 55, 55, 0.5);
+  font-size: 12px;
+  display: inline-block;
+}
+
+.menu-box{
+  text-align: center;
+  background-color: #fefefe;
+  position: relative;
+  margin-top:15px;
+  width: 98%;
+}
+.menu-box img{
+  height: 30px;
+  margin: 25px auto 10px;
+}
+.line-stand{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  border-right: 1px solid #efefef;
+}
+.left-25{
+  left:25%;
+}
+.left-50{
+  left:50%;
+}
+.left-75{
+  left:75%;
+}
+.line-across{
+  position: absolute;
+  top:50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #efefef;
+}
+.button-bar{
+  text-align: center;
+}
+.button-bar .mine-logout{
+  background-color: #6CD080;
+  color: #fefefe;
+  border-radius: 50px;
+  padding: 5px 50px;
+  margin:35px auto;
+  font-weight: normal;
+}
