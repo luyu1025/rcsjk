@@ -88,8 +88,8 @@
                 }
                 let t = this
                 this.$ajax.post(window.host+'/api/posts',req).then((res)=>{
-                        t.tableData = res.data.data
-                        t.page.total = res.data.total
+                    t.tableData = res.data.data
+                    t.page.total = res.data.total
                 },(res)=>{})
             },
             formatter(row, column) {

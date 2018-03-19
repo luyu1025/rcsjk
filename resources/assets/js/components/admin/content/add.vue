@@ -20,7 +20,7 @@
                     <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                 </el-upload>
             </el-form-item>
-            {{imageUrl}}
+            {{post.img}}
             <el-form-item label="描述">
                 <el-input v-model="post.abs"></el-input>
             </el-form-item>
@@ -104,12 +104,20 @@
                 }
                 let t = this
                 this.$ajax.post(window.host+'/api/addPost',t.post).then((res)=>{
-                    console.log(res.data)
+                    if(res.data.err_code!=0){
+                        this.$message.error(res.data.msg)
+                    }else {
+                        this.$message.success('添加成功！')
+                        setTimeout(t.suc,2000)
+                    }
                 },(res)=>{})
+            },
+            suc:function () {
+                this.$router.push('/content')
             },
             handleAvatarSuccess:function (res,file) {
                 this.imageUrl = URL.createObjectURL(file.raw);
-                console.log(res)
+                this.post.img = res.data
             },
             beforeAvatarUpload(file) {
                 console.log(file)

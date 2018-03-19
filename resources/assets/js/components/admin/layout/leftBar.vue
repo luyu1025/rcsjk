@@ -22,15 +22,22 @@
             return{
                 arr:[],
                 list:[
-                    {
-                        name:'基础管理', //菜单栏名称
-                        icon:'set',    //图标字段
-                        children:[     //子菜单
-
-                        ]
-                    }
+                    { name:"我的",link:'',icon: "default",children:[
+                        { name:'信息管理', icon: "default", link:'/mine/index'},
+                        { name:'安全管理', icon: "default", link:'/mine/safe'},
+                    ]},
+                    { name:"会员管理",link:'',icon: "default",children:[
+                        { name:'会员列表', icon: "default", link:'/member'},
+                        { name:'申请管理', icon: "default", link:'/apply'},
+                    ]},
+                    { name:"内容管理",link:'',icon: "default",children:[
+                        { name:'新闻发布', icon: "default", link:'/content'},
+                        { name:'招募通告', icon: "default", link:'/recruit'},
+                        { name:'分享审批', icon: "default", link:'/share'},
+                        { name:'活动列表', icon: "default", link:'/active'},
+                    ]},
                 ],
-                state:false,
+                state:true,
                 text:"正在获取菜单..."
             }
         },
@@ -43,7 +50,7 @@
             }
         },
         created:function(){
-            this.getTree()
+//            this.getTree()
         },
         methods:{
             getTree:function () {

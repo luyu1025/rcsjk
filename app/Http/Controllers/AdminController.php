@@ -157,7 +157,7 @@ class AdminController extends Controller
         }elseif (!$req['abs']){
             $res['err_code'] = -1;
             $res['msg'] = '描述不能为空！';
-        }elseif (!$img){
+        }elseif (!$req['img']){
             $res['err_code'] = -1;
             $res['msg'] = '未上传图片！';
         }else{
