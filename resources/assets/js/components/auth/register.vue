@@ -6,7 +6,7 @@
         <mt-field label="密码" placeholder="请输入密码" type="password" v-model="password"></mt-field>
         <mt-field label="确认密码" placeholder="请输再次入密码" type="password" v-model="password2"></mt-field>
         <button @click="register">注册</button>
-        <button @click="getReg">获取验证码</button>
+        <!--<button @click="getReg">获取验证码</button>-->
 
     </div>
 
@@ -34,12 +34,15 @@
         methods:{
             register:function(){
                 let user = {name:this.name,email:this.email,phone:this.phone,password:this.password}
+                let t = this
                 this.$ajax.post(window.host + '/api/register',user).then(
                     function(res){
-                        if(res.data.length){
-                            console.log(res.data)
+                        if(res.data.err_code==0){
+                            MessageBox.alert(res.data.msg).then(action => {
+                                t.$router.push('/mine/login')
+                            });
                         }else {
-                            console.log('不存在')
+                            MessageBox('提示',res.data.msg)
                         }
                     },function (res) {
                         console.log(res)

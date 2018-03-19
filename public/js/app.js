@@ -58574,25 +58574,18 @@ var render = function() {
         _c(
           "div",
           { staticClass: "auth_box" },
-          [_vm._m(0), _vm._v(" "), _c("router-view")],
+          [
+            _c("div", { staticClass: "login_tittle" }),
+            _vm._v(" "),
+            _c("router-view")
+          ],
           1
         )
       ])
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "login_tittle" }, [
-      _c("div", [_vm._v("账号登陆")]),
-      _vm._v(" "),
-      _c("div", [_vm._v("快捷登陆")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -58736,11 +58729,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         register: function register() {
             var user = { name: this.name, email: this.email, phone: this.phone, password: this.password };
+            var t = this;
             this.$ajax.post(window.host + '/api/register', user).then(function (res) {
-                if (res.data.length) {
-                    console.log(res.data);
+                if (res.data.err_code == 0) {
+                    __WEBPACK_IMPORTED_MODULE_0_mint_ui__["MessageBox"].alert(res.data.msg).then(function (action) {
+                        t.$router.push('/mine/login');
+                    });
                 } else {
-                    console.log('不存在');
+                    Object(__WEBPACK_IMPORTED_MODULE_0_mint_ui__["MessageBox"])('提示', res.data.msg);
                 }
             }, function (res) {
                 console.log(res);
@@ -58946,9 +58942,7 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("button", { on: { click: _vm.register } }, [_vm._v("注册")]),
-      _vm._v(" "),
-      _c("button", { on: { click: _vm.getReg } }, [_vm._v("获取验证码")])
+      _c("button", { on: { click: _vm.register } }, [_vm._v("注册")])
     ],
     1
   )
@@ -59144,6 +59138,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mint_ui__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mint_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mint_ui__);
 //
 //
 //
@@ -59158,6 +59154,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -59171,14 +59168,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         login: function login() {
+            var t = this;
             this.$ajax.post(window.host + '/api/login', {
                 phone: this.phone,
                 password: this.password
             }).then(function (response) {
-                console.log(response.data);
+                if (response.data.err_code != 0) {
+                    Object(__WEBPACK_IMPORTED_MODULE_0_mint_ui__["MessageBox"])('提示', response.data.msg);
+                } else {
+                    //                            MessageBox('提示',response.data.msg)
+                    t.$router.push('/');
+                }
             }, function (response) {
                 console.log(response);
             });
+        },
+        register: function register() {
+            this.$router.push('/mine/register');
+            //                MessageBox('提示','操作成功')
         }
     }
 });
@@ -59195,7 +59202,6 @@ var render = function() {
     _c(
       "div",
       [
-        _vm._v("\n        " + _vm._s(this.password) + "\n        "),
         _c("mt-field", {
           attrs: { placeholder: "Input tel", type: "tel" },
           model: {
@@ -59223,11 +59229,18 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
+      { staticClass: "login-btn" },
       [
         _c(
           "mt-button",
-          { attrs: { size: "normal" }, on: { click: _vm.login } },
+          { attrs: { size: "small" }, on: { click: _vm.login } },
           [_vm._v("登陆")]
+        ),
+        _vm._v(" "),
+        _c(
+          "mt-button",
+          { attrs: { size: "small" }, on: { click: _vm.register } },
+          [_vm._v("注册")]
         )
       ],
       1

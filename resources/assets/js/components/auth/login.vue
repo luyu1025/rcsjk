@@ -4,8 +4,8 @@
            <!--<img src="http://www.lsecret.cn/img/SJK1.png">-->
            <div class="auth_box">
                <div class="login_tittle">
-                   <div>账号登陆</div>
-                   <div>快捷登陆</div>
+                   <!--<div>账号登陆</div>-->
+                   <!--<div>快捷登陆</div>-->
                </div>
                <router-view>
 

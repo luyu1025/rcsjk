@@ -8527,7 +8527,14 @@ button.close {
 .auth_box {
   position: fixed;
   top: 20vh;
+  left: 50%;
   height: 50vh;
+  margin-left: -25%;
+}
+
+.login-btn {
+  margin-top: 1rem;
+  text-align: right;
 }
 
 .grow-tar {
