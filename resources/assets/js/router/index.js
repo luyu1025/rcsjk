@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import route from  '../components/routerView.vue'
+// import route from  '../components/routerview.vue'
 import cvlist from  '../components/cv/list.vue'
 import index from '../components/index1.vue'
 import welcome from '../components/first.vue'
@@ -10,6 +10,11 @@ import grow from '../components/grow/main.vue'
 import grow_share from '../components/grow/share.vue'
 import grow_active from '../components/grow/active.vue'
 import grow_work from '../components/grow/work.vue'
+import login from '../components/auth/login.vue'
+import register from '../components/auth/register.vue'
+import routerView from '../components/index.vue'
+import accountLogin from '../components/auth/account.vue'
+import atricle from '../components/grow/article.vue'
 
 Vue.use(Router)
 
@@ -29,7 +34,14 @@ export default new Router({
                     { path:'active', component:grow_active, name:'升级' },
                     { path:'work', component:grow_work, name:'打怪' },
                 ]},
-                { path:'mine', component:mine, name:'我的'},
+                { path:'mine', component:routerView, redirect:'/mine/index', children:[
+                    {path:'index', component:mine, name:'我的'},
+                    {path:'login', component:login, name:'登录', redirect:'/mine/login/account', children:[
+                        { path:'account', component:accountLogin, name:'账号登陆'}
+                    ]},
+                    {path:'register', component:register, name:'注册'}
+                ]},
+                { path:'article/:id', component:atricle, name:'文章'}
             ]
         }
     ]

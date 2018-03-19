@@ -41,12 +41,17 @@ class PostController extends Controller
         for($i=0; $i<6; $i++){
             $num = $num.rand(0,9);
         }
-        $res = $this->sendMessage(Input::all()['phone'],$num);
+        $res = array();
+        $msg = $this->sendMessage(Input::all()['phone'],$num);
         Session::flash('msgReg',$num);
-        if($res['stat']==100){
-
+        if($msg['stat']==100){
+            $res['err_code'] = 0;
+            $res['msg'] = '发送成功!';
+        }else{
+            $res['err_code'] = 1;
+            $res['msg'] = '发送失败，code:'.$msg['stat'];
         }
-        return $res;
+        return json_encode($res);
     }
     // 验证码图片生成模块
     public function captcha(){

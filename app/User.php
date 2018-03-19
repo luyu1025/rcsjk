@@ -26,4 +26,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public $timestamps = true;
+
+//    protected function getDateFormat()
+//    {
+//        return time();
+//    }
+//
+//    protected function asDateTime($value)
+//    {
+//        return $value;
+//    }
 }

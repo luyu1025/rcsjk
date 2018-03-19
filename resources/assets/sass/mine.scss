@@ -105,3 +105,17 @@
   margin:35px auto;
   font-weight: normal;
 }
+
+.bg-div{
+  position: absolute;
+}
+.bg-div>img{
+  width: 100%;
+  height: 100vh;
+}
+
+.auth_box{
+  position: fixed;
+  top: 20vh;
+  height: 50vh;
+}
