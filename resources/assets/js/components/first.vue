@@ -26,17 +26,17 @@
         <div class="container icon-box">
            <div class="title-bar">
                <div><div class="color_bar"></div>最新动态</div>
-               <span class="more">查看更多<img src="http://www.lsecret.cn/img/icon/next.png"></span>
+               <router-link tag="span" to="/more" class="more">查看更多<img src="http://www.lsecret.cn/img/icon/next.png"></router-link>
            </div>
             <div class="hr"></div>
-            <div class="info-box" v-for="item in news">
+            <router-link tag="div" class="info-box" v-for="item in news" :key="item.id" :to="{name:'article', params:{id:item.id}}">
                 <img :src="item.img">
                 <div class="content">
                         {{item.title}}
                 </div>
-                <span class="times">{{item.time}}</span>
+                <span class="times">{{item.updated_at}}</span>
                 <span style="color:#fff">1</span>
-            </div>
+            </router-link>
         </div>
         <!--分割栏-->
         <div class="background-bar">
@@ -73,22 +73,7 @@
                         url:'/index'
                     },
                 ],
-                news:[
-                    {
-                        id:1,
-                        title:'2018年寒假活动启动仪式',
-                        time:'1月22日 13:59:00',
-                        img:'http://www.lsecret.cn/img/user/bg.jpg',
-                        url:'/article/1',
-                    },
-                    {
-                        id:1,
-                        title:'2018年寒假活动启动仪式',
-                        time:'1月22日 13:59:00',
-                        img:'http://www.lsecret.cn/img/user/bg.jpg',
-                        url:'/article/1',
-                    }
-                ],
+                news:[],
                 swipes:[
                     {id:0,url:'',img:'http://www.lsecret.cn/img/SJK.png'},
                     {id:1,url:'',img:'http://www.lsecret.cn/img/user/bg.jpg'},
@@ -96,11 +81,21 @@
             }
         },
         mounted() {
-            console.log('Component mounted.')
+            this.getPosts()
         },
         methods:{
             turnto:function(url){
                 this.$router.push(url);
+            },
+            getPosts:function () {
+                let t = this
+                t.$ajax.post(window.host+'/api/content/getPosts',{type:'new',isUser:true,per_page:2,page:1}).then(
+                    (res)=>{
+                        console.log(res.data.data)
+                        for(let i=0; i<res.data.data.length; i++)
+                        t.$set(t.news,i,res.data.data[i])
+                    },(res)=>{}
+                )
             }
         }
     }

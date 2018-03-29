@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('phone')->unique();
             $table->string('head')->default('http://www.lsecret.cn/img/user/head.jpg');
             $table->string('bgp')->default('http://www.lsecret.cn/img/user/bg.jpg');
+            $table->string('qm')->nullable();
             $table->enum('auth',['0','1','2','3'])->default('0');
             $table->enum('sex',['0','1'])->default('1');  //0:女 1：男
             $table->rememberToken();

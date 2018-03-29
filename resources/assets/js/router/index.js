@@ -15,6 +15,7 @@ import register from '../components/auth/register.vue'
 import routerView from '../components/index.vue'
 import accountLogin from '../components/auth/account.vue'
 import atricle from '../components/grow/article.vue'
+import more from '../components/article/list.vue'
 
 Vue.use(Router)
 
@@ -41,7 +42,8 @@ export default new Router({
                     ]},
                     {path:'register', component:register, name:'注册'}
                 ]},
-                { path:'article/:id', component:atricle, name:'文章'}
+                { path:'article/:id', component:atricle, name:'article'},
+                { path:'more', component:more, name:'list'},
             ]
         }
     ]

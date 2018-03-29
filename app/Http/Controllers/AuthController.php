@@ -17,6 +17,25 @@ class AuthController extends Controller
         $res = Auth::check();
         return json_encode($res);
     }
+    //获取用户信息
+    public function getUser(){
+        if(Auth::check()){
+            $res['err_code'] = 0;
+            $res['data'] = Auth::user();
+        }else{
+            $res['err_code'] = -2;
+            $res['msg'] = '未登录';
+        }
+        return json_encode($res);
+    }
+    //更新用户信息
+    public function updateUser(Request $request){
+        $req = $request->all();
+        $user = User::find($req['id']);
+        $user->name = $req['name'];
+        $user->sex = $req['sex'];
+
+    }
 
     //登出请求
     public function logout(){

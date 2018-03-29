@@ -44,9 +44,27 @@ Route::group(['prefix' => 'api'],function (){
     Route::post('posts', 'AdminController@getPosts');   //获取文章列表
     Route::post('addPost', 'AdminController@addPost');  //添加文章
     Route::post('delPost','AdminController@delPost');   //删除文章
+    Route::post('editPost','AdminController@editPost');   //修改文章
+    Route::group(['prefix' => 'content'],function (){
+        Route::post('initPost', 'ContentController@initPost');
+        Route::post('reInitPost', 'ContentController@reInitPost');
+        Route::post('delPost', 'ContentController@delPost');
+        Route::post('edit', 'ContentController@edit');
+        Route::post('uploadImg','ContentController@uploadImg');
+        Route::post('getPosts','ContentController@getPosts');
+        Route::post('changeStatus','ContentController@changeStatus');
+        Route::post('getPostById', 'ContentController@getPostById');
+    });
+    Route::group(['prefix'=> 'banner'],function (){
+        Route::post('getBanners','ContentController@getBanners');
+        Route::post('addBanner','ContentController@addBanner');
+        Route::post('editBanner','ContentController@editBanner');
+        Route::post('delBanner','ContentController@delBanner');
+        Route::post('upload','ContentController@uploadBanner');
+    });
     Route::group(['prefix' => 'user'],function (){
         Route::group(['prefix' => 'info'], function (){
-            Route::get('all', 'ApiController@getUserInfo');
+            Route::get('getUser', 'AuthController@getUser');
             Route::get('educations','ApiController@educations');
         });
         Route::group(['prefix' => 'edit'], function (){

@@ -8909,3 +8909,12 @@ body {
   top: 40px;
 }
 
+.top-bar {
+  height: 3rem;
+  background-color: #6CD080;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.6rem;
+}
+

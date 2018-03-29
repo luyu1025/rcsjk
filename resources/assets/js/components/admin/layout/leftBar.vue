@@ -31,6 +31,7 @@
                         { name:'申请管理', icon: "default", link:'/apply'},
                     ]},
                     { name:"内容管理",link:'',icon: "default",children:[
+                        { name:'Banner管理', link:'/banner',icon:'default'},
                         { name:'新闻发布', icon: "default", link:'/content'},
                         { name:'招募通告', icon: "default", link:'/recruit'},
                         { name:'分享审批', icon: "default", link:'/share'},

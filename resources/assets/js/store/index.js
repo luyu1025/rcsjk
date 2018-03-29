@@ -25,7 +25,8 @@ const state = {
   },
   user:{
     phone:0,
-    id:''
+    name:'',
+    auth:0,
   },
   isLogin:true
 }

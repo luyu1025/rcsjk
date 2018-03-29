@@ -45,6 +45,8 @@
                     console.log(res.data)
                     if(res.data.err_code==0){
                         t.user=res.data.data
+                        t.$store.commit('SET_USER',res.data.data)
+                        console.log(123,t.$store.getters.user)
                     }else {
                         t.$message.error(res.data.msg)
                     }

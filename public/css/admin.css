@@ -8382,6 +8382,7 @@ li {
 
 .main-box {
   position: fixed;
+  overflow: auto;
   top: 9rem;
   left: 12rem;
   bottom: 4rem;
@@ -8415,6 +8416,14 @@ li {
   line-height: 6rem;
   margin-left: 2rem;
   color: #fff;
+}
+
+.active-font {
+  color: #00B0F0;
+}
+
+.info-font {
+  color: #717070;
 }
 
 .list-top {

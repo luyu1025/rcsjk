@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Menu;
+use App\Picture;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -144,13 +145,14 @@ class AdminController extends Controller
     }
     //获取文章列表
     public function getPosts(Request $request){
-        $res = Post::paginate($request->input('per_page'));
+        $res = Post::where('type','new')->where('status','!=','0')->paginate($request->input('per_page'));
         return $res;
     }
     // 添加文章
     public function addPost(Request $request){
         $user = Auth::user();
         $req = $request->all();
+//        return $req;
         if(!$req['title']){
             $res['err_code'] = -1;
             $res['msg'] = '标题不能为空！';
@@ -168,6 +170,9 @@ class AdminController extends Controller
             $post->abs = $req['abs'];
             $post->img = $req['img'];
             $post->user = $user['name'];
+            if(isset($req['type'])){
+                $post->type = $req['type'];
+            }
             if($post->save()){
                 $res['err_code'] = 0;
                 $res['msg'] = '添加成功';
@@ -184,7 +189,11 @@ class AdminController extends Controller
     public function delPost(Request $request){
         $id = $request->input('id');
         if(Auth::user()['auth']||(Post::find($id)['user_id']==Auth::id())){
-            if(Post::destroy($id)){
+            $post = Post::find($id);
+            $local = strstr($post['img'], 'storage/uploads/');
+            Picture::where('local',$post['img'])->delete();
+            unlink($local);
+            if($post->delete()){
                 $res['err_code'] = 0;
             }else{
                 $res['err_code'] = -1;
@@ -196,9 +205,46 @@ class AdminController extends Controller
         }
         return json_encode($res);
     }
+
+    //修改文章
+    public function editPost(Request $request){
+        $req = $request->all();
+        $user = Auth::user();
+        $res = array();
+        $post = Post::find($req['id']);
+        if($post->user_id == $user->user_id||$user->auth > 2 ){
+            $post->title = $req['title'];
+            $post->content = $req['content'];
+            $post->abs = $req['abs'];
+            if($post->img != $req['img']){
+                $pic = $post->img;
+                $post->img = $req['img'];
+            }
+            if($post->save()){
+                if(isset($pic)){
+                    $local = strstr($pic, 'storage/uploads/');
+                    Picture::where('local',$pic)->delete();
+                    unlink($local);
+                }
+                $res['err_code'] = 0;
+                $res['msg'] = '修改成功';
+            }else{
+                $res['err_code'] = -1;
+                $res['msg'] = '修改失败';
+            }
+        }else{
+            $res['err_code'] = -2;
+            $res['msg'] = '权限不足';
+        }
+        return json_encode($res);
+    }
     //测试用函数
     public function test(){
-        Auth::logout();
-        return dd(Auth::check());
+        $user_id = Auth::id();
+        $res = Post::where(['user_id'=>$user_id,'status'=>'0','type'=>'new'])->first();
+        if($res == null){
+            $res =1;
+        }
+        return dd($res);
     }
 }

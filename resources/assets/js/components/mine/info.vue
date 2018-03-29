@@ -1,49 +1,9 @@
 <template>
     <div>
-        <div class="aspectration" data-ratio="1:0.67">
-            <img :src="mine.bgp" style="z-index: 0;">
-            <div class="mine-top" style="z-index: 1;">
-                <div class="title-bar">
-                    我的
-                </div>
-                <img class="head-pic" :src="mine.head">
-                <div>
-                    <div class="name">{{mine.name}}</div>
-                    <div style="clear: both;"></div>
-                    <div class="qm">{{mine.qm}}</div>
-                </div>
-                <div class="mine-top-bottom">
-                    <div>
-                        <i class="iconfont icon-sc"></i>收藏
-                    </div>
-                    <div>
-                        <i class="iconfont icon-tz"></i>通知
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container menu-box">
-            <div class="line-across"></div>
-            <div class="line-stand left-25"></div>
-            <div class="line-stand left-50"></div>
-            <div class="line-stand left-75"></div>
-            <div class="row">
-                <div v-for="item in item1" class="col-xs-3">
-                    <img :src="item.img">
-                    <p>{{item.text}}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div v-for="item in item2" class="col-xs-3">
-                    <img :src="item.img">
-                    <p>{{item.text}}</p>
-                </div>
-            </div>
+        <div>
+
         </div>
 
-        <div class="container icon-box button-bar">
-            <mt-button  size="small" class="mine-logout">不要点我</mt-button>
-        </div>
     </div>
 </template>
 <style>
@@ -107,6 +67,9 @@
 
                     }
                 )
+            },
+            updateInfo:function () {
+
             }
         }
     }

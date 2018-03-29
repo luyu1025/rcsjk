@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePicturesTable extends Migration
+class CreateBannersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreatePicturesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pictures', function (Blueprint $table) {
+        Schema::create('banners', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('local')->default('');
-            $table->integer('user_id')->default(0);
-            $table->integer('post_id')->default(0);
+            $table->string('url')->default('');
+            $table->enum('type',['0','1','2','3'])->default('0');//0:首页，1：分享 2：招新
+            $table->integer('level')->default(0);
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreatePicturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pictures');
+        Schema::dropIfExists('banners');
     }
 }

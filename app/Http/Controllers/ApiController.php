@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Picture;
 use App\User;
 use Gregwar\Captcha\CaptchaBuilder;
 use Illuminate\Http\Request;
@@ -27,18 +28,30 @@ class ApiController extends Controller
         $filePath = $destinationPath.$fileName;
 //        return asset($filePath);
         if (move_uploaded_file($file['tmp_name'], $filePath)) {
-            $info=DB::insert('insert into pictures (user_id,local) VALUES (?,?)',[Auth::id(),asset($filePath)]);
-            if($info){
+            $picture = new Picture;
+            $picture->user_id = Auth::id();
+            $picture->local = asset($filePath);
+            if($picture->save()){
                 $res['err_code'] = 0;
-                $res['data'] = asset($filePath);
+                $res['data'] = array();
+                $res['data']['local'] = asset($filePath);
+                $res['data']['id'] = $picture->id;
             }else{
                 $res['err_code'] = 2;
                 $res['msg'] = '图片数据插入失败！';
             }
-        } else {
+        }else {
             $res['err_code'] = -1;
             $res['msg'] = '图片上传失败！';
         }
         return json_encode($res);
+    }
+
+    public function delPicById($id){
+        if(Picture::destroy($id)){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
